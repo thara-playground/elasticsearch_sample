@@ -1,0 +1,7 @@
+{
+  "template" : "ha_*",
+  "order": 10,
+  "settings" : {
+    "index.number_of_replicas": 5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "template": "*",
+  "order": 1,
+  "settings": {
+    "index.number_of_replicas" : 0
+  },
+  "mappings": {
+    "_default_": {
+      "_source": {
+        "enabled": false
+      }
+    }
+  }
+}

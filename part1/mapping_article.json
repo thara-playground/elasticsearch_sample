@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "article": {
+      "dynamic_template": [
+        {
+          "template_test": {
+            "match" : "*",
+            "mapping" : {
+              "type": "multi_field",
+              "fields" : {
+                "{name}": { "type" : "{dynamic_type}"},
+                "str": {"type": "string"}
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

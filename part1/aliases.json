@@ -1,0 +1,22 @@
+{
+  "actions" : [
+    { "add" : {"index" : "day10", "alias" : "week12"}},
+    { "add" : {"index" : "day11", "alias" : "week12"}},
+    { "add" : {"index" : "day12", "alias" : "week12"}},
+    { "remove" : {"index" : "day9", "alias" : "week12"}},
+    { "add" : {
+        "index" : "data",
+        "alias" : "client",
+        "filter" : { "term" : { "clientId" : "12345"} }
+      }
+    },
+    {
+      "add" : {
+        "index": "data",
+        "alias": "client",
+        "search_routing": "12345,12346,12347",
+        "index_routing": "13245"
+      }
+    }
+  ]
+}
