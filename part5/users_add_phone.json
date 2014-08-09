@@ -1,0 +1,7 @@
+{
+  "user": {
+    "properties": {
+      "phone": {"type": "string", "store": "yes", "index": "not_analyzed"}
+    }
+  }
+}

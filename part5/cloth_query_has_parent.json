@@ -1,0 +1,10 @@
+{
+  "query": {
+    "has_parent": {
+      "parent_type": "cloth",
+      "query": {
+        "term": {"name": "test"}
+      }
+    }
+  }
+}

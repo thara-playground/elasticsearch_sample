@@ -1,0 +1,13 @@
+{
+  "query": {
+    "top_children": {
+      "type": "variation",
+      "query": {
+        "term": {"size": "XXL"}
+      },
+      "score": "max",
+      "factor": 10,
+      "incremental_factor": 2
+    }
+  }
+}

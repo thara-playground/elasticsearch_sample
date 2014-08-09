@@ -1,0 +1,15 @@
+{
+  "query": {
+    "nested": {
+      "path" : "variation",
+      "query": {
+        "bool": {
+          "must": [
+            { "term": { " variation.size": "XXL"}},
+            { "term": { " variation.color": "black"}}
+          ]
+        }
+      }
+    }
+  }
+}

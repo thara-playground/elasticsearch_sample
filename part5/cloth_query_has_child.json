@@ -1,0 +1,15 @@
+{
+  "query": {
+    "has_child": {
+      "type": "variation",
+      "query": {
+        "bool": {
+          "must": [
+            {"term": {"size": "XXL"}},
+            {"term": {"color": "red"}}
+          ]
+        }
+      }
+    }
+  }
+}
