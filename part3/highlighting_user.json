@@ -1,0 +1,13 @@
+{
+  "query": {
+    "term": {
+      "name" : "test"
+    }
+  },
+  "highlight": {
+    "fields" : {
+      "name" : { "pre_tags": [ "<b>" ], "post_tags": [ "</b>" ]},
+      "description" : { "pre_tags": [ "<b>" ], "post_tags": ["</b>"]}
+    }
+  }
+}

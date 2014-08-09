@@ -1,0 +1,7 @@
+{
+  "filter": {
+    "geo_distance": {
+      "location": "48.8567,2.3508", "distance": "2000km"
+    }
+  }
+}

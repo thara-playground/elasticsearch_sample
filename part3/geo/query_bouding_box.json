@@ -1,0 +1,10 @@
+{
+  "filter": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": "52.4796, -1.903",
+        "bottom_right": "48.8567, 2.3508"
+      }
+    }
+  }
+}

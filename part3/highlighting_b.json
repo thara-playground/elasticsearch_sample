@@ -1,0 +1,14 @@
+{
+  "query": {
+    "term": {
+      "title": "crime"
+    }
+  },
+  "highlight" : {
+    "pre_tags": [ "<b>"],
+    "post_tags": [ "</b>"],
+    "fields": {
+      "title" : {}
+    }
+  }
+}

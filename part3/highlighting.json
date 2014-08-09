@@ -1,0 +1,12 @@
+{
+  "query": {
+    "term": {
+      "title": "crime"
+    }
+  },
+  "highlight" : {
+    "fields": {
+      "title" : {}
+    }
+  }
+}
