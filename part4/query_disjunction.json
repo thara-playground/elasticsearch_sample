@@ -1,0 +1,9 @@
+{
+  "query": {
+    "query_string": {
+      "fields": ["from^5", "to^10", "subject"],
+      "query": "john",
+      "use_dis_max": false
+    }
+  }
+}

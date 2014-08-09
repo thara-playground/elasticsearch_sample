@@ -1,0 +1,10 @@
+{
+  "query": {
+    "span_first": {
+      "match": {
+        "span_term": { "description": "breaks" }
+      },
+      "end" : 3
+    }
+  }
+}

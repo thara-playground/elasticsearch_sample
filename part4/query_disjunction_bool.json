@@ -1,0 +1,11 @@
+{
+  "query": {
+    "bool" : {
+      "should": [
+        { "term" : { "from" : { "value": "john", "boost" : 5 }}},
+        { "term" : { "to" : { "value": "john", "boost" : 10 }}},
+        { "term" : { "subject" : { "value": "john"}}}
+      ]
+    }
+  }
+}

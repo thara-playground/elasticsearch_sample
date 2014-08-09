@@ -1,0 +1,23 @@
+{
+  "index": {
+    "analysis": {
+      "analyzer": {
+        "synonym" : {
+          "tokenizer" : "whitespace",
+          "filter": [
+            "synonym"
+          ]
+        }
+      },
+      "filter": {
+        "synonym" : {
+          "type": "synonym",
+          "ignore_case": true,
+          "synonyms": [
+            "crime => criminality"
+          ]
+        }
+      }
+    }
+  }
+}

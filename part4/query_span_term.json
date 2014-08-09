@@ -1,0 +1,10 @@
+{
+  "query": {
+    "span_term": {
+      "description": {
+        "value": "world",
+        "boost": 5.0
+      }
+    }
+  }
+}

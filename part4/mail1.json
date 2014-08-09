@@ -1,0 +1,6 @@
+{
+  "id" : 1,
+  "to": "John Smith",
+  "from" : "David Jones",
+  "subject": "Top secret!"
+}
