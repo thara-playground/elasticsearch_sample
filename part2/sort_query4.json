@@ -1,0 +1,12 @@
+{
+  "query": {
+    "match_all": {}
+  },
+  "sort": {
+    "_script": {
+      "script": "doc['tags'].values.length > 0 ? doc['tags'].values[0] : '\u19999'",
+      "type": "string",
+      "order": "asc"
+    }
+  }
+}

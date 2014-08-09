@@ -1,0 +1,11 @@
+{
+  "partial_fields": {
+    "partial1" : {
+      "include" : ["titl*"],
+      "exclude" : ["chara*"]
+    }
+  },
+  "query": {
+    "term": { "title" : "crime"}
+  }
+}

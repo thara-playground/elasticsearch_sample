@@ -1,0 +1,9 @@
+{
+  "query": {
+    "query_string": {
+      "query": "crime punishment",
+      "fields": [ "title", "otitle"],
+      "use_dis_max": true
+    }
+  }
+}

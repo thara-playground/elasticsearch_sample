@@ -1,0 +1,18 @@
+{
+  "query": {
+    "function_score": {
+      "query": {
+        "term": {
+          "title": "crime"
+        }
+      },
+      "boost_mode": "replace",
+      "script_score": {
+        "params": {
+          "multiply": 2
+        },
+        "script": "_score * _source.year * multiply"
+      }
+    }
+  }
+}

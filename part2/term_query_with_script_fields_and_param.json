@@ -1,0 +1,13 @@
+{
+  "script_fields": {
+    "correctYear": {
+      "script": "_source.year - paramYear",
+      "params": {
+        "paramYear": 1800
+      }
+    }
+  },
+  "query": {
+    "term": { "title" : "crime"}
+  }
+}

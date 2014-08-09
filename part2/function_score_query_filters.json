@@ -1,0 +1,33 @@
+{
+  "query" : {
+    "function_score": {
+      "query": {
+        "match_all": {}
+      },
+      "functions": [
+        {
+          "filter": {
+            "term" : {
+              "title" : "crime"
+            }
+          },
+          "boost_factor": 10.0
+        },
+        {
+          "filter": {
+            "range": {
+              "year": {
+                "gte": 1900,
+                "lte": 1950
+              }
+            }
+          },
+          "script_score": {
+            "script": "_source.year"
+          }
+        }
+      ],
+      "score_mode": "first"
+    }
+  }
+}

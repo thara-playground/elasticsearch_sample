@@ -1,0 +1,12 @@
+{
+  "query": {
+    "constant_score": {
+      "query": {
+        "term": {
+          "title": "crime"
+        }
+      },
+      "boost": 2.0
+    }
+  }
+}

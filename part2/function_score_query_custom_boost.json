@@ -1,0 +1,12 @@
+{
+  "query": {
+    "function_score": {
+      "query": {
+        "term": {
+          "title": "crime"
+        }
+      },
+      "boost_factor": 10.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "query": {
+    "more_like_this": {
+      "fields": ["title", "otitle"],
+      "like_text": "crime and punishment",
+      "min_term_freq" : 1,
+      "min_doc_freq": 1
+    }
+  }
+}

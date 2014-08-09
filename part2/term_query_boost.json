@@ -1,0 +1,10 @@
+{
+  "query": {
+    "term" : {
+      "title" : {
+        "value": "crime",
+        "boost": 10.0
+      }
+    }
+  }
+}

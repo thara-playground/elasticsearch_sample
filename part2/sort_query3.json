@@ -1,0 +1,8 @@
+{
+  "query": {
+    "match_all": {}
+  },
+  "sort": [
+    {"section": { "order": "asc", "missing": "_last"}}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "query": {
+    "wildcard": {
+      "title": {
+        "value": "cr?me",
+        "boost": 20.0
+      }
+    }
+  }
+}

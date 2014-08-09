@@ -1,0 +1,10 @@
+{
+  "query": {
+    "prefix": {
+      "title": {
+        "value": "cri",
+        "boost": 3.0
+      }
+    }
+  }
+}

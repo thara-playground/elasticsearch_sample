@@ -1,0 +1,12 @@
+{
+  "query": {
+    "match_all": {}
+  },
+  "sort": {
+    "_script": {
+      "script": "text_sort",
+      "type": "string",
+      "order": "asc"
+    }
+  }
+}

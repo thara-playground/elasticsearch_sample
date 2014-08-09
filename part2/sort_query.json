@@ -1,0 +1,11 @@
+{
+  "query": {
+    "terms": {
+      "title": ["crime", "front", "punishment"],
+      "minimum_match": 1
+    }
+  },
+  "sort": [
+    { "_score": "asc" }
+  ]
+}

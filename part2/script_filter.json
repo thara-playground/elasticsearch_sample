@@ -1,0 +1,10 @@
+{
+  "filter" : {
+    "script" : {
+      "script": "now - _doc['year'].value > 1000",
+      "params": {
+        "now": 2013
+      }
+    }
+  }
+}

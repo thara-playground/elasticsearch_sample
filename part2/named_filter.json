@@ -1,0 +1,42 @@
+{
+  "query": {
+    "filtered": {
+      "query": { "matchAll" : {} },
+      "filter": {
+        "or": {
+          "filters": [
+            {
+              "and": {
+                "filters": [
+                  {
+                    "term": {
+                      "available" : true,
+                      "_name" : "avail"
+                    }
+                  },
+                  {
+                    "term": {
+                      "tags": "novel",
+                      "_name": "tag"
+                    }
+                  }
+                ],
+                "_name": "and"
+              }
+            },
+            {
+              "range": {
+                "year": {
+                  "gte": 1800,
+                  "lte": 1899
+                },
+                "_name": "year"
+              }
+            }
+          ],
+          "_name" : "or"
+        }
+      }
+    }
+  }
+}

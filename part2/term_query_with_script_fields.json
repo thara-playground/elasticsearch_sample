@@ -1,0 +1,10 @@
+{
+  "script_fields": {
+    "correctYear": {
+      "script": "doc['year'].value - 1800"
+    }
+  },
+  "query": {
+    "term": { "title" : "crime"}
+  }
+}

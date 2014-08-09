@@ -1,0 +1,8 @@
+{
+  "query": {
+    "query_string": {
+      "query": "title:crime^10 +title:punishment -otitle:cat +author:(+Fyodor +dostoevsky)",
+      "default_field": "title"
+    }
+  }
+}

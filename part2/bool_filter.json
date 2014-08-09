@@ -1,0 +1,30 @@
+{
+  "filter": {
+    "not": {
+      "and": [
+        {
+          "term": {
+            "title": "Catch-22"
+          }
+        },
+      {
+        "or": [
+          {
+            "range": {
+              "year": {
+                "gte": 1930,
+                "lte": 1990
+              }
+            }
+          },
+          {
+            "term": {
+              "available": true
+            }
+          }
+        ]
+      }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "min_score": 0.75,
+  "query": {
+    "term": { "title" : "crime"}
+  }
+}

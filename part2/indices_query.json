@@ -1,0 +1,12 @@
+{
+  "query": {
+    "indices": {
+      "indices": [ "library"],
+      "query": {
+        "term": {
+          "title": "crime"
+        }
+      }
+    }
+  }
+}

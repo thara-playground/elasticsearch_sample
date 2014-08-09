@@ -1,0 +1,8 @@
+{
+  "query": {
+    "fuzzy_like_this": {
+      "fields": ["title", "otitle"],
+      "like_text": "crime punishment"
+    }
+  }
+}

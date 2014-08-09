@@ -1,0 +1,20 @@
+{
+  "query": {
+    "boosting": {
+      "positive": {
+        "term": {
+          "title": "crime"
+        }
+      },
+      "negative": {
+        "range": {
+          "year": {
+            "gte": 1800,
+            "lte": 1900
+          }
+        }
+      },
+      "negative_boost": 0.5
+    }
+  }
+}
